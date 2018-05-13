@@ -8,7 +8,7 @@
 
 ## 技术栈
 
-vue2 + vuex + vue-router + webpack + ES6 + axios + sass + flex + svg + node + mongoDB
+vue2 + vue-router + webpack + ES6 + axios + scss + flex + svg + echarts + node
 
 ## 部分截图
 <img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/1.jpg" width="1300" height="500" />

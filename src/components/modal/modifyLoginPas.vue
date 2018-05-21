@@ -1,0 +1,147 @@
+<template>
+  <div class="modal-mask" v-show="showModal">
+    <div class="password-modal modal">
+      <div class="modal-close" ref="btnClose" @click="close($event)"></div>
+      <div class="modal-head"></div>
+      <div class="modal-content">
+        <div class="modal-content-cell">
+          <div class="cell-key">原始密码</div>
+          <div class="cell-value">
+            <input type="password" v-model="oldPassword">
+          </div>
+        </div>
+        <div class="modal-content-cell">
+          <div class="cell-key">新密码</div>
+          <div class="cell-value">
+            <input type="password" v-model="newPassword1">
+          </div>
+        </div>
+        <div class="modal-content-cell">
+          <div class="cell-key">再次确认</div>
+          <div class="cell-value">
+            <input type="password" v-model="newPassword2">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-footer-btn-sure" ref="btnSure" @click="sure">确认</div>
+      </div>
+    </div>    
+  </div>
+</template>
+<script>
+import {userPassword} from '@/js/allAxiosRequire'
+export default {
+  name: 'password-modal',
+  data () {
+    return {
+      showModal: true,
+      oldPassword: '',
+      newPassword1: '',
+      newPassword2: '',
+      passwordType: ''
+    }
+  },
+  mounted () {
+    this.bindModalEvent()
+  },
+  components: {
+  },
+  methods: {
+    close () {
+      this.showModal = false
+    },
+    sure () {
+      if(!this.oldPassword === '' || !this.newPassword1 === '' || !this.newPassword2 === '') {
+        Bus.$emit('openTipModal', '密码不能为空')
+        return
+      }
+      if(this.newPassword2 !== this.newPassword1) {
+        Bus.$emit('openTipModal', '两次输入新密码不一致~')
+        return
+      }
+      userPassword(this.passwordType, this.oldPassword, this.newPassword1)
+      .then(function (response) {
+        this.showModal = false
+        Bus.$emit('openTipModal', response.data.msg)
+        Bus.$emit('refreshData')
+      }.bind(this))
+      .catch(function (err) {
+        if(err && err.response) {
+          if(err.response.status === 422) {
+            Bus.$emit('openTipModal', err.response.data.msg)
+          }
+        }
+      })
+    },
+    bindModalEvent () {
+      this.showModal = false
+      Bus.$on('openLoginPasswordModal', function(type){
+        this.passwordType = type
+        this.oldPassword = '',
+        this.newPassword1 = '',
+        this.newPassword2 = '',
+        this.showModal = true
+      }.bind(this))
+    }
+  }
+}
+</script>
+<style scoped lang="less" type="text/less">
+.flex-both-center () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password-modal {
+  width: 20rem;
+  color: #fff;
+  .modal-head {
+    height: 2.1rem;
+  }
+  .modal-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+    .modal-content-cell {
+      display: flex;
+      height: 2rem;
+      .cell-key {
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0.5rem;
+      }
+      .cell-value {
+        flex: 3;
+        .flex-both-center();
+        input {
+          width: 90%;
+          height: 1.5rem;
+          padding: 0;
+          padding: 0 0.5rem;
+          outline: none;
+          border: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          line-height: 1.5rem;
+          color: #fff;        
+        }
+      }
+    }
+  }
+  .modal-footer {
+    height: 2.5rem;
+    display: flex;
+    .flex-both-center();
+    .modal-footer-btn-sure {
+      .flex-both-center();
+      height: 1.5rem;
+      width: 5rem;
+      background-image: url('~@/assets/an-bg01.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+</style>

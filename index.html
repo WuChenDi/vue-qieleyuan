@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="telephone=no" name="format-detection">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-tap-highlight" content="no"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="MobileOptimized" content="320">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="full-screen" content="yes">
+  <meta name="browsermode" content="application">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="x5-page-mode" content="app">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="screen-orientation" content="portrait">
+  <link rel="stylesheet" type="text/css" href="./static/css/scrollbar.css">
+  <title>企鹅乐园</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <audio id="mainBgMusic" loop autoplay>
+    <source src="/static/music/back.mp3" type="audio/mpeg">
+  </audio>
+  <script type="text/javascript" src="./static/js/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/iScroll.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script>
+    function autoPlayAudio() {
+      wx.config({
+        debug: false,
+        appId: '',
+        timestamp: 1,
+        nonceStr: '',
+        signature: '',
+        jsApiList: []
+      });
+      wx.ready(function(){
+        var globalAudio = document.getElementById("mainBgMusic");
+        globalAudio.play();
+      });
+    };
+    autoPlayAudio();
+  </script>
+
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

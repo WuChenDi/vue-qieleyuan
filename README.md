@@ -12,7 +12,7 @@
 - 这里解释下注册页面“激活码”的作用，由于之前被黑客攻击过（流量攻击），所以我这里给出的解决方案是后台管理系统（管理员）或者游戏（玩家）页面生成激活码的页面，前端应该在注册页面判断激活码是否正确才会显示获取短信验证码的按钮
 - 线上的接口访问不了了，如果想启动项目，自己稍调试下就可以了接口问题就可以了
 
-## 部分截图
+## 页面截图
 <img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/1.jpg" width="1300" height="500" />
 <img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/2.jpg" width="1300" height="500" />
 <img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/3.jpg" width="1300" height="500" />

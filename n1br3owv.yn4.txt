@@ -1,0 +1,32 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   dist/index.html
+#	deleted:    dist/static/css/app.ace43fe1cb0c6591797b2205de285039.css.map
+#	renamed:    dist/static/css/app.ace43fe1cb0c6591797b2205de285039.css -> dist/static/css/app.f15cfbf2514d2484ae0c2d639d94c29a.css
+#	new file:   dist/static/css/app.f15cfbf2514d2484ae0c2d639d94c29a.css.map
+#	new file:   dist/static/img/body-bg.3e29526.jpg
+#	deleted:    dist/static/img/body-bg.cc96971.jpg
+#	deleted:    dist/static/js/app.34c5b2e274f7abb56c90.js
+#	deleted:    dist/static/js/app.34c5b2e274f7abb56c90.js.map
+#
+# Changes not staged for commit:
+#	deleted:    dist/static/js/manifest.f6e9bab3cc547e36e371.js
+#	deleted:    dist/static/js/manifest.f6e9bab3cc547e36e371.js.map
+#	modified:   package-lock.json
+#	modified:   package.json
+#	modified:   src/components/modal/caifentu-modal.vue
+#
+# Untracked files:
+#	dist/static/js/app.5a08e50b48877c0e8ef4.js
+#	dist/static/js/app.5a08e50b48877c0e8ef4.js.map
+#	dist/static/js/manifest.8c205ec937c93f2a5f4b.js
+#	dist/static/js/manifest.8c205ec937c93f2a5f4b.js.map
+#	src/components/modal/caifentu-modalV1.vue
+#
+

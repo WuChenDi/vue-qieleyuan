@@ -2,7 +2,7 @@
 # 基于vue2 + node + vue-router + webpack + ES6/7 + axios + scss + flex + svg + echarts +  实现移动端小游戏
 
 # vue-qieleyuan
-企鹅乐园是一款修身娱乐小游戏，让玩家在闲时体验一把在雪地里筑巢，增养，增长，收获的全部过程(Inconvenient uploading code)
+企鹅乐园是一款修身娱乐小游戏，让玩家在闲时体验一把在雪地里筑巢，增养，增长，收获的全部过程(Inconvenient to upload code, if necessary, please contact the author)
 
 
 ## 说明

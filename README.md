@@ -1,58 +1,54 @@
 
-# 基于vue2 + node + vue-router + webpack + ES6/7 + axios + scss + flex + svg + echarts +  实现移动端小游戏
+# 基于vue2 + node + vue-router + webpack + ES6/7 + axios + scss + flex + svg + echarts +  实现 H5 小游戏
 
 # vue-qieleyuan
-企鹅乐园是一款修身娱乐小游戏，让玩家在闲时体验一把在雪地里筑巢，增养，增长，收获的全部过程(Inconvenient to upload code, if necessary, please contact the author)
-
+企鹅乐园是一款修身娱乐小游戏，让玩家在闲时体验一把在雪地里筑巢，增养，增长，收获的全部过程
 
 ## 说明
-
-- 如果对您有帮助，您可以点右上角 "Star" 支持一下 十分感谢!  ^_^
-- 如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR👍
-- 这里解释下注册页面“激活码”的作用，由于之前被故意注册，频繁点击获取短信，所以我这里给出的解决方案是后台管理系统（管理员）或者游戏（玩家）页面生成激活码的页面，前端应该在注册页面判断激活码是否正确才会显示获取短信验证码的按钮
-- 线上的接口访问不了了，如果想启动项目，自己稍调试下就可以了接口问题就可以了
+- 这里解释下注册页面 **激活码** 的作用，由于发现被故意注册，频繁点击获取短信，所以这里给出的解决方案是由 **管理员** 或者 **玩家** 生成激活码给予你注册，针对邀请者我们也会提供一定的福利。技术人员在根据注册页面判断激活码是否正确才会显示获取短信验证码的按钮
+- 代码上传不方便，如果有需要，请联系作者
 
 ## 页面截图
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/1.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/2.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/3.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/4.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/5.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/6.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/7.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/7-1.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/8.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/9.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/10.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/11.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/12.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/13.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/14.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/15.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/16.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/17.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/18.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/19.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/20.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/21.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/22.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/23.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/24.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/25.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/26.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/27.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/28.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/29.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/30.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/31.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/32.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/33.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/34.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/35.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/36.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/37.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/38.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/39.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/40.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/41.jpg" width="1300" height="500" />
-<img src="https://github.com/WuChenDi/vue-qieleyuan/blob/master/screenshots/42.jpg" width="1300" height="500" />
+<img src="./screenshots/1.jpg"/>
+<img src="./screenshots/2.jpg"/>
+<img src="./screenshots/3.jpg"/>
+<img src="./screenshots/4.jpg"/>
+<img src="./screenshots/5.jpg"/>
+<img src="./screenshots/6.jpg"/>
+<img src="./screenshots/7.jpg"/>
+<img src="./screenshots/7-1.jpg"/>
+<img src="./screenshots/8.jpg"/>
+<img src="./screenshots/9.jpg"/>
+<img src="./screenshots/10.jpg"/>
+<img src="./screenshots/11.jpg"/>
+<img src="./screenshots/12.jpg"/>
+<img src="./screenshots/13.jpg"/>
+<img src="./screenshots/14.jpg"/>
+<img src="./screenshots/15.jpg"/>
+<img src="./screenshots/16.jpg"/>
+<img src="./screenshots/17.jpg"/>
+<img src="./screenshots/18.jpg"/>
+<img src="./screenshots/19.jpg"/>
+<img src="./screenshots/20.jpg"/>
+<img src="./screenshots/21.jpg"/>
+<img src="./screenshots/22.jpg"/>
+<img src="./screenshots/23.jpg"/>
+<img src="./screenshots/24.jpg"/>
+<img src="./screenshots/25.jpg"/>
+<img src="./screenshots/26.jpg"/>
+<img src="./screenshots/27.jpg"/>
+<img src="./screenshots/28.jpg"/>
+<img src="./screenshots/29.jpg"/>
+<img src="./screenshots/30.jpg"/>
+<img src="./screenshots/31.jpg"/>
+<img src="./screenshots/32.jpg"/>
+<img src="./screenshots/33.jpg"/>
+<img src="./screenshots/34.jpg"/>
+<img src="./screenshots/35.jpg"/>
+<img src="./screenshots/36.jpg"/>
+<img src="./screenshots/37.jpg"/>
+<img src="./screenshots/38.jpg"/>
+<img src="./screenshots/39.jpg"/>
+<img src="./screenshots/40.jpg"/>
+<img src="./screenshots/41.jpg"/>
+<img src="./screenshots/42.jpg"/>
